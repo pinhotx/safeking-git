@@ -1,0 +1,11 @@
+SAFEKING by Tiago Alves Pinheiro da Silveira
+
+Tema escolhido: Segurança da Informação e LGPD
+Paleta de Cores: Foram utilizados o verde e amarelo para condizer com a lei brasileira (LGPD) e o Azul escuro para passar seriedade e confiabilidade
+Técnica empregada: Preenchimento Gradiente, Inner Shadow, Contorno, Mesclagem (União, Exclusão) 
+Software Utilizado: Inkscape
+Estilo: Combination Mark, foi colocado o simbolo de uma coroa estilizada com uma trinca ao lado de um texto pintado com as cores da coroa.
+Fonte: A fonte utilzada foi Fira Sans (sem serifa)
+
+Referências: Burger King e Discord
+Conceito - Safe King, uma plataforma de consultas e orientação sobre segurança da informação e sobre a Lei Geral de Proteção de Dados (LGPD) onde você, o Rei, decide onde suas informações estarão disponíveis.
