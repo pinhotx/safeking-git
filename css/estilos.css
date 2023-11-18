@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
 }
 
+section{
+  padding: 2rem;
+}
+
 header nav, footer{
   box-sizing: border-box;
 }
@@ -40,19 +44,53 @@ aside nav{
 }
 
 footer{
-  position: absolute;
   bottom: 0;
-  height: 8rem;
+  height: fit-content;
   background-color: #12a7e2;
   width: 100vw;
-  padding: 1rem;
 }
 
 footer nav{
+  margin: 1rem;
+}
+footer nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  transition: color 0.2s ease;
+}
 
+footer nav a:hover{
+  color: yellow;
 }
 
 footer img.logo{
   width: 12rem;
+  filter:brightness(100);
+  transition: filter 0.3s ease;
+  margin: 1rem;
+}
+
+footer img.logo:hover{
+  width: 12rem;
+  filter: brightness(2);
+}
+
+footer p.footer-bottom{
+  background-color: #0c6d8b;
+  color: #fff;
+  padding: 1rem;
+  width: 100vw;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer p a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: color 0.2s ease;
 }
 
