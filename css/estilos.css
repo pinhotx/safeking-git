@@ -1,3 +1,14 @@
+:root{
+  /*Cores do Site*/
+  --cor-primaria: #4691f0; /* Azul */
+  --cor-destaque: #f0c946; /* Amarelo */
+  --cor-secundaria: #f09c46; /* Laranja */
+  --cor-de-fundo-primaria: #121212;
+  --cor-de-fundo-secundaria: #596370; /* Azul Acizentado */
+  
+}
+
+
 *{
   scroll-behavior: smooth;
 }
@@ -11,7 +22,7 @@ header nav, footer{
 }
 
 header nav{
-  background-color: #242020;
+  background-color: var(--cor-de-fundo-primaria);
   height: 4rem;
   width: 100vw;
   padding: 1rem;
@@ -19,7 +30,21 @@ header nav{
 
 header nav .logo{
   width: 10rem;
+  transform: scale(1);
+  transition: left, top, transform 0.3s ease;
+}
+
+header nav div#logonav{
+  width: min-content;
   display: inline;
+  position: relative;
+  top: -0.2rem;
+}
+header nav div#logonav:hover .logo{
+  filter: brightness(2) drop-shadow(0.1rem 0.1rem 0.1rem var(--cor-destaque));
+  top: -0.3rem;
+  left: 0.3rem;
+  transform: scale(1.05);
 }
 
 header nav ul, header nav ul li, header nav.logo {
@@ -46,7 +71,7 @@ aside nav{
 footer{
   bottom: 0;
   height: fit-content;
-  background-color: #12a7e2;
+  background-color: var(--cor-primaria);
   width: 100vw;
 }
 
@@ -58,27 +83,30 @@ footer nav a{
   text-decoration: none;
   font-size: 1rem;
   line-height: 1.2rem;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
 footer nav a:hover{
-  color: yellow;
+  color: var(--cor-destaque);
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 footer img.logo{
+  margin: 1rem;
   width: 12rem;
   filter:brightness(100);
-  transition: filter 0.3s ease;
-  margin: 1rem;
+  transition: filter, transform 0.5s ease;
+  transform: scale(1)
 }
 
 footer img.logo:hover{
-  width: 12rem;
-  filter: brightness(2);
+  filter: brightness(2) drop-shadow(0.1rem 0.1rem 0.2rem var(--cor-de-fundo-secundaria));
+  transform: scale(1.1);
 }
 
 footer p.footer-bottom{
-  background-color: #0c6d8b;
+  background-color: var(--cor-de-fundo-secundaria);
   color: #fff;
   padding: 1rem;
   width: 100vw;
