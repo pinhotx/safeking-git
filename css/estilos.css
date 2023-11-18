@@ -1,0 +1,58 @@
+*{
+  scroll-behavior: smooth;
+}
+
+header nav, footer{
+  box-sizing: border-box;
+}
+
+header nav{
+  background-color: #242020;
+  height: 4rem;
+  width: 100vw;
+  padding: 1rem;
+}
+
+header nav .logo{
+  width: 10rem;
+  display: inline;
+}
+
+header nav ul, header nav ul li, header nav.logo {
+  display: inline-block;
+}
+
+header nav ul{
+  float: right;
+}
+
+header nav ul li{
+  position: relative;
+  top: 0.5rem;
+}
+
+header nav a{
+  color: #fff;
+}
+
+aside nav{
+
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  height: 8rem;
+  background-color: #12a7e2;
+  width: 100vw;
+  padding: 1rem;
+}
+
+footer nav{
+
+}
+
+footer img.logo{
+  width: 12rem;
+}
+
