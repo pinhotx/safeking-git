@@ -5,16 +5,28 @@
   --cor-secundaria: #f09c46; /* Laranja */
   --cor-de-fundo-primaria: #121212;
   --cor-de-fundo-secundaria: #596370; /* Azul Acizentado */
+  --cor-de-fundo-clara: #ddd9ce; /*Branco Gelo*/
+  --border-color: 2px solid rgba(0, 0, 0, 0.2);
   
 }
-
 
 *{
   scroll-behavior: smooth;
 }
 
+h1{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: var(--border-color);
+}
+
 section{
   padding: 2rem;
+}
+
+p{
+  margin-bottom: 8px;
+  line-height: 16px;
 }
 
 header nav, footer{
@@ -45,6 +57,29 @@ header nav div#logonav:hover .logo{
   top: -0.3rem;
   left: 0.3rem;
   transform: scale(1.05);
+}
+
+section dd{
+  margin-bottom: 8px;
+}
+
+section dl{
+  text-indent: 1rem;
+  background-color: var(--cor-de-fundo-secundaria);
+  color: var(--cor-de-fundo-clara);
+  padding: 1rem;
+  border: 3px solid var(--cor-secundaria);
+  border-radius: 0.5rem;
+}
+
+section dt{
+  font-weight: bold;
+  color: var(--cor-destaque);
+  margin-top: 8px;
+}
+
+section dd{
+  text-indent: 3rem;
 }
 
 header nav ul, header nav ul li, header nav.logo {
@@ -95,14 +130,7 @@ footer nav a:hover{
 footer img.logo{
   margin: 1rem;
   width: 12rem;
-  filter:brightness(100);
-  transition: filter, transform 0.5s ease;
-  transform: scale(1)
-}
 
-footer img.logo:hover{
-  filter: brightness(2) drop-shadow(0.1rem 0.1rem 0.2rem var(--cor-de-fundo-secundaria));
-  transform: scale(1.1);
 }
 
 footer p.footer-bottom{
@@ -112,6 +140,7 @@ footer p.footer-bottom{
   width: 100vw;
   margin-top: 1rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 footer p a{
