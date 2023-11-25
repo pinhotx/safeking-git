@@ -1,15 +1,3 @@
-:root{
-  /*Cores do Site*/
-  --cor-primaria: #4691f0; /* Azul */
-  --cor-destaque: #f0c946; /* Amarelo */
-  --cor-secundaria: #f09c46; /* Laranja */
-  --cor-de-fundo-primaria: #121212;
-  --cor-de-fundo-secundaria: #596370; /* Azul Acizentado */
-  --cor-de-fundo-clara: #ddd9ce; /*Branco Gelo*/
-  --border-color: 2px solid rgba(0, 0, 0, 0.2);
-  
-}
-
 *{
   scroll-behavior: smooth;
 }
@@ -17,7 +5,7 @@
 h1{
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  border-bottom: var(--border-color);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 section{
@@ -65,11 +53,10 @@ section dd{
 
 section dl{
   text-indent: 1rem;
-  background-color: var(--cor-de-fundo-secundaria);
+  
   color: var(--cor-de-fundo-clara);
   padding: 1rem;
-  border: 3px solid var(--cor-secundaria);
-  border-radius: 0.5rem;
+
 }
 
 section dt{
@@ -100,7 +87,27 @@ header nav a{
 }
 
 aside nav{
+  
+}
 
+
+
+section#pilares-da-seguranca img{
+  width: 15vw;  
+  
+}
+
+section#pilares-da-seguranca dl{
+  width: 70vw;
+  display: inline-block;
+}
+
+section#pilares-da-seguranca div{
+  width: 100%;
+  display: inline-block;
+  background-color: var(--cor-de-fundo-secundaria);
+  border: 3px solid var(--cor-secundaria);
+  border-radius: 0.5rem;
 }
 
 footer{

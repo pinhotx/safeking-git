@@ -1,0 +1,11 @@
+:root{
+    /* CORES */
+
+    --cor-primaria: #4691f0; /* Azul */
+    --cor-destaque: #f0c946; /* Amarelo */
+    --cor-secundaria: #f09c46; /* Laranja */
+    --cor-de-fundo-primaria: #121212;
+    --cor-de-fundo-secundaria: #596370; /* Azul Acizentado */
+    --cor-de-fundo-clara: #ddd9ce; /* Branco Gelo */
+
+}
