@@ -1,5 +1,4 @@
 /* Estilos Gerais */
-
 *{
   scroll-behavior: smooth;
   
@@ -15,11 +14,23 @@ html, body, main{
 }
 
 section{
-  padding: 2rem;
+  margin: 2rem;
 }
 
 /* Textos em geral */
+
+strong{
+  font-weight: bold;
+  color: var(--cor-destaque);
+}
+
 h1{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+h2{
   font-size: 1.5rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
@@ -28,6 +39,7 @@ h1{
 main p{
   margin-bottom: 8px;
   line-height: 16px;
+  text-indent: 1rem;
 }
 
 /* Listas de Definição */
@@ -55,6 +67,23 @@ header nav, footer{
   box-sizing: border-box;
 }
 
+/* Destaque de Informações*/
+.bloco-destaque{
+  width: 90vw;
+  display: inline-block;
+  background-color: var(--cor-de-fundo);
+  border: 3px solid var(--cor-secundaria);
+  border-radius: 0.5rem;
+}
+
+p.bloco-destaque{
+  padding: 1rem;
+  color:#fff;
+}
+
+dl.bloco-destaque dd{
+  color: #fff;
+}
 
 /* CABEÇALHO (HEADER) */
 header{
@@ -63,7 +92,7 @@ header{
 }
 /* Barra de navegação (NAV) */
 header nav{
-  background-color: var(--cor-de-fundo-primaria);
+  background-color: var(--cor-neutra-escura);
   height: 4rem;
   width: 100%;
   padding: 1rem;
@@ -118,22 +147,32 @@ header nav.fixed{
 
 
 /* Pilares da segurança*/
-section#pilares-da-seguranca div{
-  width: 90vw;
-  display: inline-block;
-  background-color: var(--cor-de-fundo-secundaria);
-  border: 3px solid var(--cor-secundaria);
-  border-radius: 0.5rem;
+section#dicas-de-seguranca img{
+  width: auto;
+}
+
+section#introducao-a-seguranca p{
+  text-indent: 1rem;
 }
 
 section#pilares-da-seguranca dl{
   width: 70vw;
   display: inline-block;
-  color: var(--cor-de-fundo-clara);
+  color: var(--cor-neutra-clara);
 }
 
 section#pilares-da-seguranca img{
   width: 15vw;  
+}
+
+section#politicas-de-seguranca ul li{ 
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+section#politicas-de-seguranca li > ul li{
+  list-style-type: circle;
+  text-indent: 1rem;
 }
 
 /* RODAPÉ (FOOTER) */
@@ -168,7 +207,7 @@ footer img.logo{
 }
 
 footer p.footer-bottom{
-  background-color: var(--cor-de-fundo-secundaria);
+  background-color: var(--cor-de-fundo);
   color: #fff;
   padding: 1rem;
   width: 100vw;

@@ -3,7 +3,7 @@
 
     --cor-primaria: #4691f0; /* Azul */
     /* Azul foi escolhida por ser 
-    ** Uma cor que passa confiabilidade 
+    ** Uma cor que passa confiabilidade e segurança
     ** Amplamente utilizada no ramo de tecnologia
     */
     --cor-destaque: #f0c946; /* Amarelo */
@@ -19,21 +19,22 @@
     ** É utilizada em gradiente com a cor amarela para passar um ar de alerta
     */
 
-    --cor-de-fundo-primaria: #121212;
-    /* Preto foi escolhido por ser
-    ** Uma cor neutra que não chama atenção e serve de fundo para outras cores mais claras
-    ** Representa a discrição e Instropecção de quem cuida de suas informações com cuidado
-    */
-    --cor-de-fundo-secundaria: #596370; /* Azul Acizentado */
+    --cor-de-fundo: #596370; /* Azul Acizentado */
     /* Azul acizentado
     ** Usado para complementar o preto e o azul
     ** Representa a seriedade e a confiabilidade
     ** É uma cor que não chama atenção e serve de fundo para outras cores mais claras
     */
 
-    --cor-de-fundo-clara: #ddd9ce; /* Branco Gelo */
+    --cor-neutra-clara: #ddd9ce; /* Branco Gelo */
     /* Branco Gelo
     ** Usada como cor de texto e preenchimento em fundos escuros
     ** Representa a paz e a tranquilidade
+    */
+
+    --cor-neutra-escura: #121212;
+    /* Preto foi escolhido por ser
+    ** Uma cor neutra que não chama atenção e serve de fundo para outras cores mais claras
+    ** Representa a discrição e Instropecção de quem cuida de suas informações com cuidado
     */
 }
