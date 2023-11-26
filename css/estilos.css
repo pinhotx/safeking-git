@@ -1,15 +1,18 @@
+/* Estilos Gerais */
+
 *{
   scroll-behavior: smooth;
 }
 
+section{
+  padding: 2rem;
+}
+
+/* Textos em geral */
 h1{
   font-size: 1.5rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-section{
-  padding: 2rem;
 }
 
 p{
@@ -17,10 +20,34 @@ p{
   line-height: 16px;
 }
 
+/* Listas de Definição */
+dl{
+  text-indent: 1rem;
+  padding: 1rem;
+}
+
+dt{
+  font-weight: bold;
+  color: var(--cor-destaque);
+  margin-top: 8px;
+}
+
+dd{
+  margin-bottom: 8px;
+  text-indent: 3rem;
+}
+
+/* Border-Box na nav e no footer para: 
+  - não ter barra de rolagem lateral
+  - obedecer o tamanho definido no css 
+*/
 header nav, footer{
   box-sizing: border-box;
 }
 
+
+/* CABEÇALHO (HEADER) */
+/* Barra de navegação (NAV) */
 header nav{
   background-color: var(--cor-de-fundo-primaria);
   height: 4rem;
@@ -47,29 +74,7 @@ header nav div#logonav:hover .logo{
   transform: scale(1.05);
 }
 
-section dd{
-  margin-bottom: 8px;
-}
-
-section dl{
-  text-indent: 1rem;
-  
-  color: var(--cor-de-fundo-clara);
-  padding: 1rem;
-
-}
-
-section dt{
-  font-weight: bold;
-  color: var(--cor-destaque);
-  margin-top: 8px;
-}
-
-section dd{
-  text-indent: 3rem;
-}
-
-header nav ul, header nav ul li, header nav.logo {
+header nav ul, header nav li, header nav .logo {
   display: inline-block;
 }
 
@@ -77,31 +82,26 @@ header nav ul{
   float: right;
 }
 
-header nav ul li{
+header nav li{
   position: relative;
   top: 0.5rem;
+  margin-right: 1rem;
 }
 
 header nav a{
   color: #fff;
 }
 
-aside nav{
-  
+header nav.fixed{
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
+/* Conteúdo Principal (MAIN) */
 
 
-section#pilares-da-seguranca img{
-  width: 15vw;  
-  
-}
-
-section#pilares-da-seguranca dl{
-  width: 70vw;
-  display: inline-block;
-}
-
+/* Pilares da segurança*/
 section#pilares-da-seguranca div{
   width: 100%;
   display: inline-block;
@@ -110,6 +110,17 @@ section#pilares-da-seguranca div{
   border-radius: 0.5rem;
 }
 
+section#pilares-da-seguranca dl{
+  width: 70vw;
+  display: inline-block;
+  color: var(--cor-de-fundo-clara);
+}
+
+section#pilares-da-seguranca img{
+  width: 15vw;  
+}
+
+/* RODAPÉ (FOOTER) */
 footer{
   bottom: 0;
   height: fit-content;
