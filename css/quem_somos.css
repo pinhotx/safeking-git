@@ -1,12 +1,23 @@
+em{
+  font-style: italic;
+  color: var(--cor-primaria);
+}
+
+dt{
+  color: var(--cor-primaria);
+}
+
 section#banner{
   background-image: url(../assets/images/banner_background.jpg);
+  background-size: cover;
   padding: 8rem 3rem;
-  height: 20vh;
+  height: 30vh;
   color: var(--cor-neutra-clara);
   margin: 0;
 }
 
-section#banner > a{
+/* Logo e Link para a imagem de fundo no Pixabay*/
+section#banner a{
   right: 1rem;
   top: 5rem;
   position: absolute;
@@ -22,12 +33,82 @@ section#banner a img:hover{
   filter: none;
 }
 
+/* Título do banner */
 section#banner h1{
   font-size: 3rem;
   border: none;
 }
 
+/* Demais textos do banner */
 section#banner p{
   text-indent: 0;
 
+}
+
+section#integrantes{
+  position: relative;
+  top: -8rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  background-color: var(--cor-neutra-clara);
+  border-radius: 0.75rem;
+  border: 1rem double var(--cor-primaria);
+
+  height: 20rem;
+  width: 25vw;
+}
+
+.card div.titulo{
+  background-color: var(--cor-de-fundo);
+  padding: 1rem;
+}
+
+.card h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 0;
+  
+  color: var(--cor-neutra-clara);
+}
+
+.card h4{
+  margin-bottom: 1rem;
+}
+
+.card h3{
+  font-size: 1.2rem;
+  color: var(--cor-neutra-clara);
+}
+
+.card ul{
+  text-align: center;
+}
+
+.card li{
+  display: inline;
+}
+
+.card .conteudo{
+  padding: 2rem;
+}
+
+.card .conteudo p{
+  text-align: justify;
+}
+
+section#integrantes div.card#lukinha{
+  float: left;
+}
+
+section#fatec, section#objetivo{
+  position: relative;
+  top: -4rem;
+}
+
+section#fatec img{
+  filter:invert();
 }
