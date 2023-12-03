@@ -19,9 +19,16 @@ section{
 
 /* Textos em geral */
 
-strong{
+strong, .king-text{
   font-weight: bold;
   color: var(--cor-destaque);
+}
+
+/* 
+  Toda vez que a palavra rei ou king for usada em um texto, use a classe .king-text 
+*/
+.king-text{
+  text-transform: uppercase;
 }
 
 h1{
@@ -41,6 +48,7 @@ main p{
   line-height: 16px;
   text-indent: 1rem;
 }
+
 
 /* Listas de Definição */
 dl{
