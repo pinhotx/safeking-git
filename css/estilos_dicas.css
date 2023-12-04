@@ -1,0 +1,5 @@
+/* BANNER */
+section#banner{
+  background-image: url(../assets/images/banner_background.jpg);
+  background-size: cover;
+}
