@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/cores.css">
   <link rel="stylesheet" href="../css/estilos.css">
-  <link rel="stylesheet" href="../css/quem_somos.css">
+  <link rel="stylesheet" href="../css/estilos_quem_somos.css">
   <title>Safeking - Quem Somos?</title>
 </head>
 
@@ -19,14 +19,16 @@
       </div>
       <ul>
         <li><a href="../index.html">Página Principal</a></li>
-        <li><a title="Pilares da Segurança da Informação" href="#pilares-da-seguranca">Pilares</a></li>
-        <li><a title="Dicas de Segurança" href="pages/dicas.html">Proteja-se</a></li>
+        <li><a title="Dicas de Segurança" href="./dicas.html">Proteja-se</a></li>
+        <li><a title="Objetivo da SafeKing" href="#objetivo">Objetivo</a></li>
+        <li><a title="Fatec Lins" href="#fatec">A Fatec Lins</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="banner">
-      <a title="Ver imagem no Pixabay" href="https://pixabay.com/illustrations/background-technology-computer-6795624/">
+      <a class="link-para-imagem" title="Ver imagem no Pixabay"
+        href="https://pixabay.com/illustrations/background-technology-computer-6795624/">
         <img src="../assets/images/pixabay.svg" alt="Botão de ver a imagem de fundo no site Pixabay">
       </a>
       <h1>A arte de preservar a Informação</h1>
@@ -43,13 +45,14 @@
           <h3>Lucas Fernando de Morais</h3>
         </div>
         <div class="conteudo">
-          <h4>Aluno do 1º Semestre do Cursos de Sistemas para Internet</h4>
-          <p>Descrição do Lukinha Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+          <h4>Aluno do 1º Semestre do Curso de Tecnologia em Sistemas para Internet na <a
+              title="Faculdade de Tecnologia de Lins" href="#fatec">Fatec Lins</a></h4>
+          <p>Produtor Geral, Roadie de Lu e Robertinho e Estudante de Sistemas para Internet residente em Lins-SP</p>
         </div>
         <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Currículo</a></li>
+          <li><a class="social-link" href="#">Link 1</a></li>
+          <li><a class="social-link" href="#">Link 2</a></li>
+          <li><a class="social-link curriculo" href="#">Currículo</a></li>
         </ul>
       </div>
 
@@ -59,13 +62,19 @@
           <h3>Tiago Alves Pinheiro da Silveira</h3>
         </div>
         <div class="conteudo">
-          <h4>Tecnico de Laboratório/Área: Informática no <abbr title="Instituto Federal de Educação, Ciência e Tecnologia de São Paulo">IFSP</abbr> de Pirituba</h4>
-          <p>Aluno do 2º Semestre do curso de Sistemas para Internet, Desenvolvedor de Software Front-End, Artista e Designer Digital residente em São Paulo - SP</p>
+          <h4>Tecnico de Laboratório/Área: Informática no <abbr
+              title="Instituto Federal de Educação, Ciência e Tecnologia de São Paulo">IFSP</abbr> de Pirituba</h4>
+          <p>Tecnólogo em Análise e Desenvolvimento de Sistemas, aluno do 2º Semestre do curso de Sistemas para Internet
+            na Fatec Lins, Dev Front-End, Artista e Designer Digital residente em São Paulo - SP</p>
         </div>
         <ul>
-          <li><a href="https://github.com/pinhotx">Github</a></li>
-          <li><a href="https://linkedin.com/in/pinhotx">Linkedin</a></li>
-          <li><a href="https://pinhotx.github.io/ppsi1-curriculo">Currículo</a></li>
+          <li><a title="Perfil de Tiago no Github" class="social-link github" href="https://github.com/pinhotx"><img
+                src="../assets/images/github-mark-white.png" alt="Link para o perfil de Tiago no Github"></a></li>
+          <li><a title="Perfil de Tiago no Linkedin" class="social-link linkedin"
+              href="https://linkedin.com/in/pinhotx"><img src="../assets/images/linkedin-logo.png"
+                alt="Link para o perfil de Tiago no Github"></a></li>
+          <li><a title="Currículo de Tiago" class="social-link curriculo"
+              href="https://pinhotx.github.io/ppsi1-curriculo">Currículo</a></li>
         </ul>
       </div>
 
@@ -73,7 +82,10 @@
 
     <section id="objetivo">
       <h2>Objetivo</h2>
-      <p>Safeking é um trabalho interdisciplinar do curso de <em><abbr title="Cursos Superior de Tecnologia em Sistemas para Internet">Sistemas para Internet</abbr></em> desenvolvido por Lucas Morais e por Tiago "Pinhotx" Silveira na <abbr title="Faculdade de Tecnologia de Lins Prof. Antônio Seabra">Fatec Lins</abbr> para as disciplinas de: </p>
+      <p>Safeking é um trabalho interdisciplinar do curso de <em><abbr
+            title="Cursos Superior de Tecnologia em Sistemas para Internet">Sistemas para Internet</abbr></em>
+        desenvolvido por Lucas Morais e por Tiago "Pinhotx" Silveira na <abbr
+          title="Faculdade de Tecnologia de Lins Prof. Antônio Seabra">Fatec Lins</abbr> para as disciplinas de: </p>
       <dl id="disciplinas">
         <dt>Bases da Internet</dt>
         <dd><a href="https://www.linkedin.com/in/rafael-hamamura-15643175/">Prof. Rafael Hamamura</a></dd>
@@ -87,8 +99,12 @@
     </section>
 
     <section id="fatec">
-      <a href="https://www.fateclins.edu.br"><img src="https://www.fateclins.edu.br/web/img/logo-fateclins-white.png" alt=""></a>
-      <p> A <abbr title="Faculdade de Tecnologia de Lins Prof. Antônio Seabra">Fatec Lins</abbr> é a uma instituição de ensino superior pública, pertencente ao Centro Estadual de Educação Tecnológica Paula Souza (CEETEPS), autarquia da Secretaria de Desenvolvimento Econômico, Ciência e Tecnologia (SDECTI) do estado de São Paulo.</p>
+      <a href="https://www.fateclins.edu.br"><img src="https://www.fateclins.edu.br/web/img/logo-fateclins-white.png"
+          alt=""></a>
+      <div class="divider-border"></div>
+      <p> A <abbr title="Faculdade de Tecnologia de Lins Prof. Antônio Seabra">Fatec Lins</abbr> é a uma instituição de
+        ensino superior pública, pertencente ao Centro Estadual de Educação Tecnológica Paula Souza (CEETEPS), autarquia
+        da Secretaria de Desenvolvimento Econômico, Ciência e Tecnologia (SDECTI) do estado de São Paulo.</p>
       <a href="https://www.fateclins.edu.br/web/a-fatec">Saiba mais</a>
     </section>
   </main>
@@ -99,22 +115,10 @@
         <li>
           <a href="#topo">Voltar para o inicio</a>
         </li>
-        <li>
-          <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"><abbr
-              title="Lei Geral de Proteção e Dados">LGPD</abbr></a>
-        </li>
-        <li>
-          <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">Lei Geral de Proteção de
-            Dados</a>
-        </li>
-        <li>
-          <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">Lei Geral de Proteção de
-            Dados</a>
-        </li>
-        <li>
-          <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">Lei Geral de Proteção de
-            Dados</a>
-        </li>
+        <li><a href="../index.html">Página Principal</a></li>
+        <li><a title="Dicas de Segurança" href="./dicas.html">Proteja-se</a></li>
+        <li><a title="Objetivo da SafeKing" href="#topo">Sobre Nós</a></li>
+        <li><a title="Fatec Lins" href="https://www.fateclins.edu.br">Fatec Lins</a></li>
       </ul>
     </nav>
     <p class="footer-bottom">

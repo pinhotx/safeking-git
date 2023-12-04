@@ -31,6 +31,10 @@ strong, .king-text{
   text-transform: uppercase;
 }
 
+.divider-border{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
 h1{
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -93,6 +97,20 @@ dl.bloco-destaque dd{
   color: #fff;
 }
 
+/* Logo flutuante*/
+a.link-para-imagem img{
+  width: 2rem;
+  filter: grayscale(); /* Deixa a imagem acizentada */
+  transition: filter 0.2s ease-in; /* Faz a transição do filtro de grayscale */
+}
+
+a.link-para-imagem img:hover{ 
+  /* Tira o filtro de grayscale quando o mouse estiver por cima*/
+  filter: none; 
+}
+
+
+
 /* CABEÇALHO (HEADER) */
 header{
   width: 100vw;
@@ -153,6 +171,13 @@ header nav.fixed{
 
 /* Conteúdo Principal (MAIN) */
 
+section#banner{
+  background-color: var(--cor-de-fundo);
+  padding: 8rem 3rem;
+  height: 30vh;
+  color: var(--cor-neutra-clara);
+  margin: 0;
+}
 
 /* Pilares da segurança*/
 section#dicas-de-seguranca img{

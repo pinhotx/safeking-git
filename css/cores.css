@@ -37,4 +37,14 @@
     ** Uma cor neutra que não chama atenção e serve de fundo para outras cores mais claras
     ** Representa a discrição e Instropecção de quem cuida de suas informações com cuidado
     */
+
+
+    /*  OUTRAS CORES */
+    /*
+        Cores do Linkedin 
+        fonte: https://brand.linkedin.com/content/brand/global/en_us/index/visual-identity/color-palettes
+    */
+    --linkedin-blue: #0077b5;
+    --black: #000;
+    --white: #fff;
 }
