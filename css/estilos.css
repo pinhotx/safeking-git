@@ -1,14 +1,23 @@
-/* Estilos Gerais */
+/*  Estilos Gerais do Site
+    - Este arquivo deve ser importado em todas as páginas logo após o css/reset.css
+    - Ao invés de px, utilizamos rem para definir tamanhos de fontes e espaçamentos
+    - Além disso, utilizamos vw(viewport Width) e vh(viewport height) para definir 
+      tamanhos de elementos
+*/
 *{
   scroll-behavior: smooth;
-  
 }
 
 body{
+  /* Devido estranhesas com o tamanho total da tela, 
+  colocamos a altura com fit-content pra sempre seguir o tamanho do conteúdo */
   height: fit-content;
 }
 
 html, body, main{
+  /* Da mesma forma, colocamos o tamanho do html, body e conteudo 
+  principal (main) com o tamanho da tela e qualquer conteúdo 
+  fora dessa medida será cortada com o overflow para evitar barras de rolagem */
   width: 100vw;
   overflow-x: hidden;
 }
@@ -30,34 +39,34 @@ strong, .king-text{
 .king-text{
   text-transform: uppercase;
 }
-
+/* Borda para divisórias ou títulos*/
 .divider-border{
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-h1{
-  font-size: 1.8rem;
+h1, h2{
   margin-bottom: 1rem;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+h1{
+  font-size: 1.8rem; /* 28px */
 }
 
 h2{
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem; /* 24px */
+  
 }
 
 main p{
-  margin-bottom: 8px;
-  line-height: 16px;
-  text-indent: 1rem;
+  margin-bottom: 0.5rem; /* 8px */
+  line-height: 1rem; /* 16px */
+  text-indent: 1rem; /* 16px */
 }
-
 
 /* Listas de Definição */
 dl{
-  text-indent: 1rem;
-  padding: 1rem;
+  text-indent: 1rem; /* 16px */
+  padding: 1rem; /* 16px */
 }
 
 dt{
@@ -80,6 +89,7 @@ header nav, footer{
 }
 
 /* Destaque de Informações*/
+/* Blocos usado para listar conteúdos listáveis*/
 .bloco-destaque{
   width: 90vw;
   display: inline-block;
@@ -108,8 +118,6 @@ a.link-para-imagem img:hover{
   /* Tira o filtro de grayscale quando o mouse estiver por cima*/
   filter: none; 
 }
-
-
 
 /* CABEÇALHO (HEADER) */
 header{
@@ -177,35 +185,6 @@ section#banner{
   height: 30vh;
   color: var(--cor-neutra-clara);
   margin: 0;
-}
-
-/* Pilares da segurança*/
-section#dicas-de-seguranca img{
-  width: auto;
-}
-
-section#introducao-a-seguranca p{
-  text-indent: 1rem;
-}
-
-section#pilares-da-seguranca dl{
-  width: 70vw;
-  display: inline-block;
-  color: var(--cor-neutra-clara);
-}
-
-section#pilares-da-seguranca img{
-  width: 15vw;  
-}
-
-section#politicas-de-seguranca ul li{ 
-  list-style-type: disc;
-  margin-left: 1rem;
-}
-
-section#politicas-de-seguranca li > ul li{
-  list-style-type: circle;
-  text-indent: 1rem;
 }
 
 /* RODAPÉ (FOOTER) */

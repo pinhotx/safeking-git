@@ -1,0 +1,37 @@
+/* Estilos específicos da página index.html 
+  - Deve ser importado após o css/estilos.css
+  - Estilos que se repetem em outras páginas devem ser colocados em css/estilos.css
+*/
+
+/* O mesmo que a classe divider-border do css/estilos.css, 
+  mas aplicado a todos os h1 e h2 */
+h1, h2{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Introdução a segurança*/
+section#introducao-a-seguranca p{
+  text-indent: 1rem;
+}
+
+/* Pilares da segurança*/
+section#pilares-da-seguranca dl{
+  width: 70vw;
+  display: inline-block;
+  color: var(--cor-neutra-clara);
+}
+
+/* Cadeado da safeking */
+section#pilares-da-seguranca img{
+  width: 15vw;  
+}
+
+section#politicas-de-seguranca ul li{ 
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+section#politicas-de-seguranca li > ul li{
+  list-style-type: circle;
+  text-indent: 1rem;
+}
