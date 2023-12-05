@@ -98,10 +98,6 @@ section#integrantes{
   top: -1rem;
 }
 
-#pinhotx a.social-link.curriculo{
-  top: -0.15rem;
-}
-
 a.social-link{
   border-radius: 0.2rem;
   width: fit-content;
@@ -146,8 +142,12 @@ a.social-link.curriculo{
   background-color: var(--cor-de-fundo);
   color: var(--cor-neutra-clara);
   width: fit-content;
+  top: -0.15rem;
 }
 
+a.social-link.google-sites{
+  background-color: var(--cor-destaque);
+}
 section#integrantes div.card#lukinha{
   float: left;
 }
