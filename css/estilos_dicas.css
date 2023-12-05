@@ -1,5 +1,26 @@
 /* BANNER */
 section#banner{
-  background-image: url(../assets/images/banner_background.jpg);
+  background-image: url(../assets/images/banner_bg_dicas.jpg);
   background-size: cover;
+  background-blend-mode: multiply;
+  height: 10vh;
+}
+
+section#banner h1{
+  font-size: 3rem;
+  border: none;
+  filter: drop-shadow(5px 5px 10px #000000);
+}
+
+section h1, section h2{
+  margin-top: 2rem;
+}
+
+section ul{
+  margin-bottom: 1rem;
+  line-height: 1.2rem;
+}
+
+section#banner p{
+  filter: drop-shadow(5px 5px 10px #000000);
 }

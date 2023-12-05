@@ -63,7 +63,7 @@ main p{
   text-indent: 1rem; /* 16px */
 }
 
-/* Listas de Definição */
+/* Listas em Geral */
 dl{
   text-indent: 1rem; /* 16px */
   padding: 1rem; /* 16px */
@@ -78,6 +78,15 @@ dt{
 dd{
   margin-bottom: 8px;
   text-indent: 3rem;
+}
+
+ul.listagem li{
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+ul.listagem li ul.listagem li{
+  list-style-type: circle;
+  text-indent: 1rem;
 }
 
 /* Border-Box na nav e no footer para: 
@@ -107,6 +116,10 @@ dl.bloco-destaque dd{
   color: #fff;
 }
 
+div.bloco-destaque dd{
+  color: #fff;
+}
+
 /* Logo flutuante*/
 a.link-para-imagem img{
   width: 2rem;
@@ -117,6 +130,13 @@ a.link-para-imagem img{
 a.link-para-imagem img:hover{ 
   /* Tira o filtro de grayscale quando o mouse estiver por cima*/
   filter: none; 
+}
+
+/* Logo e Link para a imagem original de fundo do Banner*/
+section#banner a.link-para-imagem{
+  right: 1rem;
+  top: 5rem;
+  position: absolute;
 }
 
 /* CABEÇALHO (HEADER) */
@@ -186,6 +206,8 @@ section#banner{
   color: var(--cor-neutra-clara);
   margin: 0;
 }
+
+
 
 /* RODAPÉ (FOOTER) */
 footer{
