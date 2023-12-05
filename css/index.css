@@ -9,6 +9,10 @@ h1, h2{
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
+section#banner{
+  height: 10vh;
+}
+
 /* Introdução a segurança*/
 section#introducao-a-seguranca p{
   text-indent: 1rem;
@@ -24,14 +28,4 @@ section#pilares-da-seguranca dl{
 /* Cadeado da safeking */
 section#pilares-da-seguranca img{
   width: 15vw;  
-}
-
-section#politicas-de-seguranca ul li{ 
-  list-style-type: disc;
-  margin-left: 1rem;
-}
-
-section#politicas-de-seguranca li > ul li{
-  list-style-type: circle;
-  text-indent: 1rem;
 }

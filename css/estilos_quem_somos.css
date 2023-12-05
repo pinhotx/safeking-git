@@ -16,13 +16,6 @@ section#banner{
   background-size: cover;
 }
 
-/* Logo e Link para a imagem original de fundo do Banner*/
-section#banner a.link-para-imagem{
-  right: 1rem;
-  top: 5rem;
-  position: absolute;
-}
-
 /* Título do banner */
 section#banner h1{
   font-size: 3rem;
